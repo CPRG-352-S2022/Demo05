@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Test1Servlet</servlet-name>
+        <servlet-class>servlets.Test1Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Test2Servlet</servlet-name>
+        <servlet-class>servlets.Test2Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AverageCalculatorServlet</servlet-name>
+        <servlet-class>servlets.AverageCalculatorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test1Servlet</servlet-name>
+        <url-pattern>/test1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Test2Servlet</servlet-name>
+        <url-pattern>/test2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AverageCalculatorServlet</servlet-name>
+        <url-pattern>/average</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>average</welcome-file>
+    </welcome-file-list>
+</web-app>
